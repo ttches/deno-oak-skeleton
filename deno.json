@@ -1,0 +1,25 @@
+{
+  "lint": {
+    "files": {
+      "include": ["src/"]
+    }
+  },
+  "fmt": {
+    "files": {
+      "include": ["src/"]
+    },
+    "options": {
+      "indentWidth": 2
+    }
+  },
+  "tasks": {
+    "start": "deno run --unstable --allow-all src/main.ts",
+    "start:dev": "denon run --unstable --allow-all src/main.ts",
+    "start:debug": "denon run --inspect-brk --unstable --allow-all src/main.ts",
+    "install:deps": "deno cache import_map.json",
+    "test": "deno test --unstable --allow-all src/",
+    "test:watch": "denon test --unstable --allow-all src/",
+    "compile": "deno compile --allow-all --unstable --importmap import_map.json --output mythreal src/main.ts"
+  },
+  "importMap": "./import_map.json"
+}

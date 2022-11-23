@@ -1,0 +1,92 @@
+paths:
+  /abilities:
+    get:
+      tags:
+        - abilities
+      summary: Get abilities
+      description: Get all abilities
+      operationId: getAbilities
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+  /characters/{userId}:
+    get:
+      tags:
+        - characters
+      summary: By Id
+      description: Get character by Id
+      parameters:
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+  /characters:
+    post:
+      tags:
+        - characters
+      summary: Create
+      description: Create character
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                description:
+                  type: string
+                image:
+                  type: string
+                collection:
+                  type: string
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+  /users:
+    post:
+      tags:
+        - users
+      summary: Create
+      description: Create user
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+        "401":
+          description: Unauthorized
+    get:
+      tags:
+        - users
+      summary: All users
+      description: Get all users
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object

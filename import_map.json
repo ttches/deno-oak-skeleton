@@ -6,6 +6,7 @@
     "httpServer": "https://deno.land/x/oak@v10.5.1/mod.ts",
     "jose": "https://deno.land/x/jose@v4.8.3/index.ts",
     "logger": "https://deno.land/x/oak_logger/mod.ts",
-    "postgres": "https://deno.land/x/postgres@v0.16.1/mod.ts"
+    "postgres": "https://deno.land/x/postgres@v0.16.1/mod.ts",
+    "swagger": "npm:swagger-jsdoc"
   }
 }

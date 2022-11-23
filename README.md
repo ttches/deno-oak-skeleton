@@ -1,11 +1,18 @@
-# Install Dependencies
+# A Deno Oak API Template
 
-_install deno_ https://deno.land/manual/getting_started/installation
-_install denon_ `deno install -qAf --unstable https://deno.land/x/denon/denon.ts`
+- dockerized postgres
+- authentication
+<!-- - swagger
+- graphql -->
 
-# Start dev env
+## Installation
 
-_start database_ `docker-compose up`
-_start server with hot reloading_ `deno task start:dev`
+- install deno https://deno.land/manual/getting_started/installation
+- install denon `deno install -qAf --unstable https://deno.land/x/denon/denon.ts`
 
-more task commands found in ./deno.json
+## Run
+
+- start database `docker-compose up`
+- start server with hot reloading `deno task start:dev`
+
+**more task commands found in ./deno.json**

@@ -19,7 +19,7 @@
     "install:deps": "deno cache import_map.json",
     "test": "deno test --unstable --allow-all src/",
     "test:watch": "denon test --unstable --allow-all src/",
-    "compile": "deno compile --allow-all --unstable --importmap import_map.json --output mythreal src/main.ts"
+    "compile": "deno compile --allow-all --unstable --importmap import_map.json --output skeleton src/main.ts"
   },
   "importMap": "./import_map.json"
 }
